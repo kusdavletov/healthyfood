@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<div class="container">
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="/">Main</a></li>
+            <li><span>How it works?</span></li>
+        </ul>
+
+    </div>
+    <h1 class="page-title text-center">How it works?</h1>
+    <div class="how-it-work">
+        <div class="work-step">
+            <div class="work-step__header">
+                <div class="work-step__num">1</div>
+                <div class="work-step__text">Вы делаете заказ на сайте или в нашем <a href="https://www.instagram.com/healthymeal_kz/">инстаграм-аккаунте</a>
+                </div>
+            </div>
+            <div class="work-step__body">
+                <div class="work-step__row">
+                    <div class="work-step__col">
+                        <img src="{% static 'img/step-1.svg' %}">
+                    </div>
+                    <div class="work-step__separator"></div>
+                    <div class="work-step__col">
+                        <img class="img-circle" src="{% static 'img/step-2.png' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-step">
+            <div class="work-step__header">
+                <div class="work-step__num">2</div>
+                <div class="work-step__text">Общаетесь с нашим менеджером</div>
+            </div>
+            <div class="work-step__description">Наш сотрудник оказывает помощь в окончательном выборе программы, вместе вы заполняете анкетные данные, если есть
+                <br>особенности здоровья, после чего ваша информация передается диетологу на рассмотрение и разработку заключения</div>
+            <div class="work-step__body">
+                <div class="work-step__picture">
+                    <img class="img-circle" src="{% static 'img/step-3.png' %}">
+                </div>
+            </div>
+        </div>
+        <div class="work-step">
+            <div class="work-step__header">
+                <div class="work-step__num">3</div>
+                <div class="work-step__text">Мы упаковываем еду</div>
+            </div>
+            <div class="work-step__description">После окончательного выбора программы готовые блюда раскладываются в специальные герметичные контейнеры, которые можно
+                <br>разогревать в духовке или микроволновой печи</div>
+            <div class="work-step__body">
+                <div class="work-step__picture">
+                    <img class="img-circle" src="{% static 'img/step-4.png' %}">
+                </div>
+            </div>
+        </div>
+        <div class="work-step">
+            <div class="work-step__header">
+                <div class="work-step__num">4</div>
+                <div class="work-step__text">Доставляем еду</div>
+            </div>
+            <div class="work-step__description">
+                <p>В первый день доставки, производится оплата через курьера. Доставку осуществляют наши водители-курьеры, которые обязательно делают звонок за один час до выезда и доставляют питание на указанный вами адрес. (Время доставки с 17 00 до 22 00)</p>
+                <p>Доставка здоровой еды осуществляется в специальных термо-сумках. Термо-сумка, обеспечивает сохранность продуктов на протяжении 5-6 часов с момента доставки. Термо-сумки и хладоэлементы являются возвратными и передаются курьеру со следующей доставкой. По желанию клиента термо-сумка предоставляется на весь период программы под залоговую стоимость</p>
+            </div>
+            <div class="work-step__body">
+                <div class="work-step__picture">
+                    <img class="img-circle-100" src=".{% static 'img/step-5.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

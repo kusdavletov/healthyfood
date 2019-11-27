@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<div class="container">
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="https://healthy-meal.kz/">Main</a></li>
+            <li><span>Contacts</span></li>
+        </ul>
+    </div>
+    <h1 class="page-title text-center">Contacts</h1>
+</div>
+<div class="contact-box">
+    <div class="contact-box__wrapper">
+        <div class="contact-box__inner">
+            <div class="contact-box__phones">
+                <ul>
+                    <li><a href="tel:+82-10-5931-6970">+82-10-5931-6970</a></li>
+                    <li><a href="tel:+82-10-8244-2610">+82-10-8244-2610</a></li>
+                </ul>
+            </div>
+            <div class="contact-box__messengers">
+                <div class="contact-box__messengers-text">Consulting via phone or messengers</div>
+                <div class="contact-box__messengers-list">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="{% static 'img/kakaotalk.svg' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="{% static 'img/whatsapp.svg' %}">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="social-list">
+    <div class="container">
+        <div class="social-list__box">
+            <div class="social-list__inner">
+                <div class="social-item">
+                    <a class="social-item__link" href="https://www.facebook.com/" target="_blank">
+                        <div class="social-item__icon"><img src="{% static 'img/facebook-rectangle.svg' %}"></div>
+                        <div class="social-item__text">healthy_food</div>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a class="social-item__link" href="https://www.instagram.com/" target="_blank">
+                        <div class="social-item__icon"><img src="{% static 'img/instagram-rectangle.svg' %}"></div>
+                        <div class="social-item__text">healthy_food</div>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a class="social-item__link" href="mailto:kumisbekovaelya@gmail.com" target="_blank">
+                        <div class="social-item__icon"><img src="{% static 'img/email-color.svg' %}"></div>
+                        <div class="social-item__text">info@healthy-food.com</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

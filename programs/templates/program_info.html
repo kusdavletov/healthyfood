@@ -1,0 +1,282 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<div class="container">
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="/">Main</a>
+            </li>
+            <li><a href="/programs">Dietary programs</a>
+            </li>
+            <li><span>{{ program.title }}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="h1 page-title">{{ program.title }}</div>
+    <div class="product">
+        <div class="product-cart" id="product-cart">
+            <script id="data-preview-gallery" type="application/json">
+                {"thumbs":["\/cache\/1\/-fq10DoMAoFeTfp6Cgcq_Qc02udWOWFK.jpg\/be1914dabc90cac8ed520fac4b6b6f3f"],"badges":[],"items":[{"img":"\/cache\/1\/-fq10DoMAoFeTfp6Cgcq_Qc02udWOWFK.jpg\/99d401c89bc2a5b9e8e934047111a9ef","alt":""}]}</script>
+            <div class="preview-gallery" data-react-id="PreviewGallery">
+                <div id="preview-gallery">
+                    <div class="preview-gallery__desktop">
+                        <div class="preview-gallery__inner">
+                            <div class="preview-gallery__thumbs"><span class="active"><img src="{{ program.image }}"></span></div>
+                            <div class="preview-gallery__list">
+                                <div class="preview-gallery__item active">
+                                    <div class="preview-gallery__badges"></div><img src="{{ program.image }}" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-gallery__mobile">
+                        <div class="carousel">
+                            <div class="slick-slider slick-initialized">
+                                <div class="slick-list">
+                                    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                                        <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 0px;">
+                                            <div>
+                                                <div class="gallery__item" tabindex="-1" style="width: 100%; display: inline-block;"><img src="./set-econom-850-kalorii_files/99d401c89bc2a5b9e8e934047111a9ef" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-name-mobile">
+                <div class="product-name-mobile__inner">
+                    <div class="product-name-mobile__col">
+                        <!--<div class="product-name-mobile__type"></div>-->
+                        <div class="product-name-mobile__name">850 Калории </div>
+                    </div>
+                    <div class="product-name-mobile__col">
+                        <div class="product-name-mobile__badges">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script id="data-product-order" type="application/json">
+                {"action":"\/order?id=5","loadDataFromCookie":false,"current":{"type":null},"labels":{"oldPrice":"\u0421\u0442\u0430\u0440\u0430\u044f \u0446\u0435\u043d\u0430","type":"\u0422\u0438\u043f \u043d\u0430\u0431\u043e\u0440\u0430","city":"\u0412\u0430\u0448 \u0433\u043e\u0440\u043e\u0434","day":"\u041a\u043e\u043b-\u0432\u043e \u0434\u043d\u0435\u0439","dayText":"\u0437\u0430 {day}","orderText":"\u0417\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u044d\u0442\u043e\u0442 \u043d\u0430\u0431\u043e\u0440","orderTextMobile":"\u0417\u0430\u043a\u0430\u0437\u0430\u0442\u044c {name}","buttonTypeText":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c {type}"},"product":{"id":5,"name":"850 \u041a\u0430\u043b\u043e\u0440\u0438\u0438 ","current":{"type":null},"showTypeInName":false,"picture":"\/cache\/1\/-fq10DoMAoFeTfp6Cgcq_Qc02udWOWFK.jpg\/d7639f7e9369a21078f69984bba82602","alt":"","info":[{"col1":"\u0426\u0435\u043b\u044c:","col2":"\u0414\u043b\u044f \u044d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0441\u043d\u0438\u0436\u0435\u043d\u0438\u044f \u0432\u0435\u0441\u0430, \u043f\u0440\u0438 \u043f\u043e\u043b\u043d\u043e\u043c \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0438\u0438 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0445 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u043c\u0443 \u0432\u0435\u0449\u0435\u0441\u0442\u0432, \u0432\u0438\u0442\u0430\u043c\u0438\u043d\u043e\u0432 \u0438 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432"},{"col1":"\u041f\u043e\u0434\u0445\u043e\u0434\u0438\u0442:","col2":"\u0416\u0435\u043d\u0449\u0438\u043d\u0430\u043c"}],"buttons":[{"id":"order","href":"\/order?id=5","mobileText":"\u0417\u0430\u043a\u0430\u0437\u0430\u0442\u044c {name}","text":"\u0417\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u044d\u0442\u043e\u0442 \u043d\u0430\u0431\u043e\u0440","classes":"active btn-circle btn-circle_md"},{"id":"more","href":"#","text":"\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435 \u043e \u043d\u0430\u0431\u043e\u0440\u0435","mobileText":"","classes":"btn-white btn-circle btn-circle_md"}],"types":[{"id":1,"text":"\u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442","fullText":"\u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439 \u043d\u0430\u0431\u043e\u0440","item":{"href":"\/set-850-kalorii","days":[{"id":1,"text":"7 \u0434\u043d\u0435\u0439"}],"cities":[{"id":1,"text":"\u0433 .\u0410\u043b\u043c\u0430\u0442\u044b"},{"id":2,"text":"\u0433. \u041d\u0443\u0440-\u0421\u0443\u043b\u0442\u0430\u043d"}],"prices":[{"cityId":1,"dayId":1,"price":"40\u00a0000 \u0442\u0435\u043d\u0433\u0435","priceFull":"40\u00a0000 \u0442\u0435\u043d\u0433\u0435 \u0437\u0430 7 \u0434\u043d\u0435\u0439","trial":"5500 \u0442\u0435\u043d\u0433\u0435 \u043f\u0440\u043e\u0431\u043d\u044b\u0439 \u0434\u0435\u043d\u044c"},{"cityId":2,"dayId":1,"price":"40\u00a0000 \u0442\u0435\u043d\u0433\u0435","priceFull":"40\u00a0000 \u0442\u0435\u043d\u0433\u0435 \u0437\u0430 7 \u0434\u043d\u0435\u0439","trial":"6000 \u0442\u0435\u043d\u0433\u0435 \u043f\u0440\u043e\u0431\u043d\u044b\u0439 \u0434\u0435\u043d\u044c"}]}}]}}</script>
+            <div id="product-order" data-react-id="ProductOrder">
+                <div class="product-order">
+                    <div>
+                        <div class="product-order__price">{{ program.price_week }} KRW</div>
+                        <div class="product-order__days">for 7 days</div>
+                        <div class="product-order__text">{{ program.price_day }} KRW for trial day</div>
+                    </div>
+                    <div class="product-order__form">
+                        <div class="product-order__radio-group product-order__radio-type">
+                            <div class="product-order__title">Order type:</div>
+                            <label class="product-order__active"><span>Standard</span></label>
+                        </div>
+                        <div>
+                            <button class="product-order__btn"><span class="btn-desktop__text">Make an order</span>
+                                <span class="btn-mobile__text">Make an order</span></button>
+                            <button class="product-order__btn product-order__mobile">Make an order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <div class="product-description__inner">
+                <div class="product-description__col">
+                    <h4>Suitable if your goal:</h4>
+                    <div class="product-description__goals">
+                        <a class="btn-bordered">{{ program.tag }}</a>
+                    </div>
+                </div>
+                <div class="product-description__col">
+                    <h4>For whom:</h4>
+                    <p>{{ program.target }}</p>
+                    <h4>The programs helps:</h4>
+                    <p>{{ program.aim }}</p>
+                </div>
+                <div class="product-description__col">
+                    <h4>Description:</h4>
+                    <p>{{ program.description }}</p>
+                </div>
+            </div>
+        </div>
+
+        {% if prohibitions %}
+        <div class="product-description contraindications">
+            <h4>Prohibitions</h4>
+            <ul>
+                {% for prohibition in prohibitions %}
+                    <li>{{ prohibition }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+
+    <div data-react-id="ProductMenu">
+        <div class="product-menu">
+            <h3>Sample menu demonstration</h3>
+            <div class="product-menu__wrapper">
+                <div class="product-menu__inner">
+                    <div class="product-menu__list">
+                        <div class="product-menu__item">
+                            <div class="product-menu__title">Breakfast \ 8:00-9:00</div>
+                            <div class="product-menu__description">
+                                <ul>
+                                    <li><span>{{ program.breakfast_info }}</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-menu__item">
+                            <div class="product-menu__title">Brunch \ 10:30-11:30</div>
+                            <div class="product-menu__description">
+                                <ul>
+                                    <li><span> {{ program.brunch_info }} </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-menu__item">
+                            <div class="product-menu__title">Lunch \ 13:00-14:00</div>
+                            <div class="product-menu__description">
+                                <ul>
+                                    <li><span> {{ program.lunch_info }} </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-menu__item">
+                            <div class="product-menu__title">Dunch \ 16:30-17:30</div>
+                            <div class="product-menu__description">
+                                <ul>
+                                    <li><span> {{ program.dunch_info }} </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-menu__item">
+                            <div class="product-menu__title">Dinner \ 19:00-20:00</div>
+                            <div class="product-menu__description">
+                                <ul>
+                                    <li><span> {{ program.dinner_info }} </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-menu__gallery">
+                        <div class="product-menu__gallery-item"></div>
+                        <div class="slick-slider slick-initialized" dir="ltr">
+                            <button type="button" data-role="none" class="slick-arrow slick-prev" style="display: block;">Previous</button>
+                            <div class="slick-list">
+                                <div class="slick-track" style="width: 2670px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                                    <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="false" style="outline: none; width: 534px;">
+                                        <div>
+                                            <div class="gallery__item" tabindex="-1" style="width: 100%; display: inline-block;">
+                                                <div><img src="{{ program.breakfast_image }}" alt="">
+                                                    <div class="product-menu__list">
+                                                        <div class="product-menu__item product-menu__active">
+                                                            <div class="product-menu__title">Завтрак\8:00-9:00</div>
+                                                            <div class="product-menu__description">
+                                                                <ul>
+                                                                    <li><span>Гранолла с молоком</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 534px;">
+                                        <div>
+                                            <div class="gallery__item" tabindex="-1" style="width: 100%; display: inline-block;">
+                                                <div><img src="{{ program.brunch_image }}" alt="">
+                                                    <div class="product-menu__list">
+                                                        <div class="product-menu__item product-menu__active">
+                                                            <div class="product-menu__title">Второй завтрак\10:30-11:30</div>
+                                                            <div class="product-menu__description">
+                                                                <ul>
+                                                                    <li><span>Ягодный микс</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 534px;">
+                                        <div>
+                                            <div class="gallery__item" tabindex="-1" style="width: 100%; display: inline-block;">
+                                                <div><img src="{{ program.lunch_image }}" alt="">
+                                                    <div class="product-menu__list">
+                                                        <div class="product-menu__item product-menu__active">
+                                                            <div class="product-menu__title">Обед\13:00-14:00</div>
+                                                            <div class="product-menu__description">
+                                                                <ul>
+                                                                    <li><span>Минестроне</span></li>
+                                                                    <li><span>Куриная филе с брокколи и цветной капустой</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 534px;">
+                                        <div>
+                                            <div class="gallery__item" tabindex="-1" style="width: 100%; display: inline-block;">
+                                                <div><img src="{{ program.dunch_image }}" alt="">
+                                                    <div class="product-menu__list">
+                                                        <div class="product-menu__item product-menu__active">
+                                                            <div class="product-menu__title">Полдник\16:30-17:30</div>
+                                                            <div class="product-menu__description">
+                                                                <ul>
+                                                                    <li><span>Микс салат из овощей</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 534px;">
+                                        <div>
+                                            <div class="gallery__item" tabindex="-1" style="width: 100%; display: inline-block;">
+                                                <div><img src="{{ program.dinner_image }}" alt="">
+                                                    <div class="product-menu__list">
+                                                        <div class="product-menu__item product-menu__active">
+                                                            <div class="product-menu__title">Ужин\19:00-20:00</div>
+                                                            <div class="product-menu__description">
+                                                                <ul>
+                                                                    <li><span>Куриные шашлычки на шпажках</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" data-role="none" class="slick-arrow slick-next" style="display: block;">Next</button>
+                        </div>
+                        <script>
+                            function nextPicture(id) {
+                                let expand = document.getElementById("phone");
+                                if (expand != null) {
+                                    document.getElementById("Phones").innerHTML = '<div id="phone-expanded" class="phone" role="combobox" aria-expanded="true" aria-haspopup="listbox" aria-labelledby="downshift-1-label" aria-owns="downshift-1-menu"><div class="phone__icon"><img src="/static/img/assets/header/shape.svg"></div><div class="phone__text animated faster fadeIn" role="listbox" aria-labelledby="downshift-1-label" id="downshift-1-menu"><div class="phone__triangle"></div><ul><li><a href="tel:+82-10-5931-6970">+82-10-5931-6970</a></li><li><a href="tel:+82-10-8244-2610">+82-10-8244-2610</a></li></ul></div></div>\n';
+                                }
+                                else {
+                                    document.getElementById("Phones").innerHTML = '<div id="phone" class="phone" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="downshift-1-label"><div class="phone__icon"><img src="/static/img/assets/header/shape.svg"></div></div>';
+                                }
+                            }
+                    </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
