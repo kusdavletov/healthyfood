@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Healthy Food</title>
-    <link rel="icon" type="image/png" href="{% static 'img/logo-small.png' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/logo.ico' %}">
     <link href="{% static 'css/maint5wnc4.min.css' %}" rel="stylesheet">
 </head>
 <body class="page page-index">
@@ -156,34 +156,12 @@
                             <div class="mobile-menu__inner">
                                 <div class="mobile-menu__menu">
                                     <ul class="mm-menu-main">
-                                        <li class="mm-item"><a href="/"><span class="mm-item__icon"><img src="{% static 'test/home.svg' %}"></span><span class="mm-item__text">Главная страница</span></a></li>
-                                        <li class="mm-item"><a href="/programs"><span class="mm-item__icon"><img src="{% static 'test/shopping-bag.svg' %}"></span><span class="mm-item__text">Программы питания</span></a></li>
-                                        <li class="mm-item"><a href="/how-it-works"><span class="mm-item__icon"><img src="{% static 'test/brain.svg' %}"></span><span class="mm-item__text">Как это работает?</span></a></li>
-                                        <li class="mm-item"><a href="/about-us"><span class="mm-item__icon"><img src="{% static 'test/open-magazine.svg' %}"></span><span class="mm-item__text">Мы в СМИ</span></a></li>
-                                        <li class="mm-item"><a href="/contacts"><span class="mm-item__icon"><img src="{% static 'test/mail.svg' %}"></span><span class="mm-item__text">Контакты</span></a></li>
+                                        <li class="mm-item"><a href="/"><span class="mm-item__icon"><img src="{% static 'img/assets/mobile-menu/home.svg' %}"></span><span class="mm-item__text">Main</span></a></li>
+                                        <li class="mm-item"><a href="/programs"><span class="mm-item__icon"><img src="{% static 'img/assets/mobile-menu/shopping-bag.svg' %}"></span><span class="mm-item__text">Dietary programs</span></a></li>
+                                        <li class="mm-item"><a href="/how-it-works"><span class="mm-item__icon"><img src="{% static 'img/assets/mobile-menu/brain.svg' %}"></span><span class="mm-item__text">How it works</span></a></li>
+                                        <li class="mm-item"><a href="/about-us"><span class="mm-item__icon"><img src="{% static 'img/assets/mobile-menu/open-magazine.svg' %}"></span><span class="mm-item__text">About us</span></a></li>
+                                        <li class="mm-item"><a href="/contacts"><span class="mm-item__icon"><img src="{% static 'img/assets/mobile-menu/mail.svg' %}"></span><span class="mm-item__text">Contacts</span></a></li>
                                     </ul>
-                                    <div class="mobile-menu__submenu">
-                                        <div class="mobile-menu__submenu-item">
-                                            <ul class="mm-menu">
-                                                <li class="mm-item"><a href="https://healthy-meal.kz/programs/programmy-dlya-mam"><span class="mm-item__icon"><img src="{% static 'test/woman.svg' %}"></span><span class="mm-item__text">Программа для мам</span></a></li>
-                                                <li class="mm-item"><a href="https://healthy-meal.kz/programs/econom"><span class="mm-item__icon"><img src="{% static 'test/piggy-bank.svg' %}"></span><span class="mm-item__text">Эконом-наборы</span></a>
-                                                    <ul class="mm-submenu"></ul>
-                                                </li>
-                                                <li class="mm-item"><a href="https://healthy-meal.kz/programs"><span class="mm-item__icon"><img src="{% static 'test/shopping-bag.svg' %}"></span><span class="mm-item__text">Стандартные наборы</span></a>
-                                                    <ul class="mm-submenu">
-                                                        <li><a href="https://healthy-meal.kz/set-econom-850-kalorii">850 Калории </a></li>
-                                                        <li><a href="https://healthy-meal.kz/set-econom-1200-kalorii">1200 Калории </a></li>
-                                                        <li><a href="https://healthy-meal.kz/set-econom-1500-kalorii">1500 Калории </a></li>
-                                                        <li><a href="https://healthy-meal.kz/set-econom-1800-kalorii">1800 Калории </a></li>
-                                                        <li><a href="https://healthy-meal.kz/set-econom-2200-kalorij">2200 калорий</a></li>
-                                                        <li><a href="https://healthy-meal.kz/set-econom-2800-kalorii">2800 Калории </a></li>
-                                                        <li><a href="https://healthy-meal.kz/set-econom-vegetarianskoe-menu">Вегетарианское меню</a></li>
-                                                        <li><a href="https://healthy-meal.kz/set-econom-programma-mama">Программа "МАМА"</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +170,7 @@
                 <div class="logo">
                     <div class="logo__picture">
                         <a href="/">
-                            <img src="{% static 'test/mP4ttEGLyLt7yNo1_Gw7RQoOpo2jSm-z.svg' %} " alt=""> </a>
+                            <img src="{% static 'img/logo.svg' %}" alt=""> </a>
                     </div>
                 </div>
                 <div class="menu">
@@ -214,8 +192,17 @@
                 </div>
                 <div class="contacts">
                     <div id="Phones" data-react-id="Phones" onclick="showPhoneNumbers()">
-                        <div id="phone" class="phone" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="downshift-1-label">
-                            <div class="phone__icon"><img src="/static/img/assets/header/shape.svg"></div>
+                        <div id="phone-expanded" class="phone" role="combobox" aria-expanded="true" aria-haspopup="listbox" aria-labelledby="downshift-1-label" aria-owns="downshift-1-menu">
+                            <div class="phone__icon">
+                                <img src="/static/img/assets/header/shape.svg">
+                            </div>
+                            <div class="phone__text animated faster fadeIn" role="listbox" aria-labelledby="downshift-1-label" id="downshift-1-menu">
+                                <div class="phone__triangle"></div>
+                                <ul>
+                                    <li><a href="tel:+82-10-5931-6970">+82-10-5931-6970</a></li>
+                                    <li><a href="tel:+82-10-8244-2610">+82-10-8244-2610</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <script>
@@ -246,7 +233,7 @@
             <div class="questions__row">
                 <div class="questions__col">
                     <div class="questions__picture">
-                        <img src="{% static 'test/girl.png' %}">
+                        <img src="{% static 'img/assets/questions/girl.png' %}">
                     </div>
                     <div class="questions__picture"></div>
                 </div>
@@ -279,8 +266,8 @@
                 <div class="footer__logo">
                     <div class="logo">
                         <div class="logo__picture">
-                            <a href="https://healthy-meal.kz/">
-                                <img src="{% static 'test/mP4ttEGLyLt7yNo1_Gw7RQoOpo2jSm-z.svg' %}" alt=""> </a>
+                            <a href="/">
+                                <img src="{% static 'img/logo.svg' %}" alt=""> </a>
                         </div>
                         <div class="logo__slogan">Healthy food delivery</div>
                     </div>
@@ -324,12 +311,12 @@
                         <div class="socials__list">
                             <ul>
                                 <li>
-                                    <a target="_blank" href="https://www.instagram.com/healthymeal_kz/">
+                                    <a target="_blank" href="/">
                                         <img src="{% static 'img/instagram-circle.svg' %}">
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://www.facebook.com/healthymealkz/">
+                                    <a target="_blank" href="/">
                                         <img src="{% static 'img/facebook-circle.svg' %}">
                                     </a>
                                 </li>
