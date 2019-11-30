@@ -80,7 +80,10 @@
                                 </div>
                             </div>
                             <div class="food-item__picture">
-                                <a href="/programs/{{ programs.0.id }}"><img src="{{ programs.0.image }}" alt=""></a>
+                                <a href="/programs/{{ programs.0.id }}">
+                                    {% static "" as baseUrl %}
+                                    <img src="{{ baseUrl }}{{ programs.0.image }}" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="food-item__footer">
@@ -131,7 +134,10 @@
                                 </div>
                             </div>
                             <div class="food-item__picture">
-                                <a href="/programs/{{ programs.1.id }}"><img src="{{ programs.1.image }}" alt=""></a>
+                                <a href="/programs/{{ programs.1.id }}">
+                                    {% static "" as baseUrl %}
+                                    <img src="{{ baseUrl }}{{ programs.1.image }}" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="food-item__footer">
@@ -185,7 +191,10 @@
                                     </div>
                                 </div>
                                 <div class="food-item__picture">
-                                    <a href="/programs/{{ program.id }}"><img src="{{ program.image }}" alt=""></a>
+                                    <a href="/programs/{{ program.id }}">
+                                        {% static "" as baseUrl %}
+                                        <img src="{{ baseUrl }}{{ program.image }}" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="food-item__footer">
