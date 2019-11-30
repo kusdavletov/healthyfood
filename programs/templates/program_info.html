@@ -22,10 +22,18 @@
                 <div id="preview-gallery">
                     <div class="preview-gallery__desktop">
                         <div class="preview-gallery__inner">
-                            <div class="preview-gallery__thumbs"><span class="active"><img src="{{ program.image }}"></span></div>
+                            <div class="preview-gallery__thumbs">
+                                <span class="active">
+                                    {% static "" as baseUrl %}
+                                    <img src="{{ baseUrl }}{{ program.image }}" alt="">
+                                </span>
+                            </div>
                             <div class="preview-gallery__list">
                                 <div class="preview-gallery__item active">
-                                    <div class="preview-gallery__badges"></div><img src="{{ program.image }}" alt=""></div>
+                                    <div class="preview-gallery__badges"></div>
+                                    {% static "" as baseUrl %}
+                                    <img src="{{ baseUrl }}{{ program.image }}" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>

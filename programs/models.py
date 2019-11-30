@@ -3,7 +3,7 @@ from django.db import models
 
 class Program(models.Model):
     title = models.CharField(max_length=100)
-    image = models.URLField()
+    image = models.TextField()
     tag = models.TextField()
     target = models.TextField()
     aim = models.TextField()
