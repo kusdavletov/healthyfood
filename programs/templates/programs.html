@@ -84,7 +84,10 @@
                                 </div>
                             </div>
                             <div class="food-item__picture">
-                                <a href="/programs/{{ programs.0.id }}"><img src="{{ programs.0.image }}" alt=""></a>
+                                <a href="/programs/{{ programs.0.id }}">
+                                    {% static "" as baseUrl %}
+                                    <img src="{{ baseUrl }}{{ programs.0.image }}" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="food-item__footer">
@@ -92,10 +95,10 @@
                                 <div class="food-price__items">
                                     <div class="food-price__item active">
                                         <div class="food-price__body">
-                                            <div class="food-price__text">{{ programs.0.price_week }} for 7 days</div>
+                                            <div class="food-price__text">{{ programs.0.price_week }} KRW for 7 days</div>
                                         </div>
                                         <div class="food-price__footer">
-                                            <div class="food-price__trial-day">{{ programs.0.price_day }} for trial day</div>
+                                            <div class="food-price__trial-day">{{ programs.0.price_day }} KRW for trial day</div>
                                         </div>
                                     </div>
                                 </div>
@@ -135,7 +138,10 @@
                                 </div>
                             </div>
                             <div class="food-item__picture">
-                                <a href="/programs/{{ programs.1.id }}"><img src="{{ programs.1.image }}" alt=""></a>
+                                <a href="/programs/{{ programs.1.id }}">
+                                    {% static "" as baseUrl %}
+                                    <img src="{{ baseUrl }}{{ programs.1.image }}" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="food-item__footer">
@@ -143,10 +149,10 @@
                                 <div class="food-price__items">
                                     <div class="food-price__item active">
                                         <div class="food-price__body">
-                                            <div class="food-price__text">{{ programs.1.price_week }} for 7 days</div>
+                                            <div class="food-price__text">{{ programs.1.price_week }} KRW for 7 days</div>
                                         </div>
                                         <div class="food-price__footer">
-                                            <div class="food-price__trial-day">{{ programs.1.price_day }} for trial day</div>
+                                            <div class="food-price__trial-day">{{ programs.1.price_day }} KRW for trial day</div>
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +195,10 @@
                                     </div>
                                 </div>
                                 <div class="food-item__picture">
-                                    <a href="/programs/{{ program.id }}"><img src="{{ program.image }}" alt=""></a>
+                                    <a href="/programs/{{ program.id }}">
+                                        {% static "" as baseUrl %}
+                                        <img src="{{ baseUrl }}{{ program.image }}" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="food-item__footer">
