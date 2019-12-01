@@ -175,6 +175,9 @@
                 <div class="menu">
                     <nav>
                         <div class="main-menu">
+                            <script id="data-main-menu" type="application/json">
+                                [{"href":"\/","text":"Home"},{"href":"\/programs","text":"Dietary programs"},{"href":"\/how-it-works","text":"How it works?"},{"href":"\/about-us","text":"About us"},{"href":"\/contacts","text":"Contacts"}]
+                            </script>
                             <div data-react-id="MainMenu">
                                 <nav>
                                     <ul>
@@ -190,17 +193,13 @@
                     </nav>
                 </div>
                 <div class="contacts">
+                    <script id="data-phones" type="application/json">
+                        ["+82-10-5931-6970","+82-10-8244-2610"]
+                    </script>
                     <div id="Phones" data-react-id="Phones" onclick="showPhoneNumbers()">
-                        <div id="phone-expanded" class="phone" role="combobox" aria-expanded="true" aria-haspopup="listbox" aria-labelledby="downshift-1-label" aria-owns="downshift-1-menu">
+                        <div id="phone" class="phone" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="downshift-1-label">
                             <div class="phone__icon">
                                 <img src="/static/img/assets/header/shape.svg">
-                            </div>
-                            <div class="phone__text animated faster fadeIn" role="listbox" aria-labelledby="downshift-1-label" id="downshift-1-menu">
-                                <div class="phone__triangle"></div>
-                                <ul>
-                                    <li><a href="tel:+82-10-5931-6970">+82-10-5931-6970</a></li>
-                                    <li><a href="tel:+82-10-8244-2610">+82-10-8244-2610</a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -242,6 +241,9 @@
                         <div class="questions__annotation">Get a quick response from our specialists</div>
                         <div class="questions__form">
                             <div>
+                                <script id="data-question-form" type="application/json">
+                                    {"action":"\/ajax\/send-question","question_placeholder":"What is your inquiry?","question_phone":"Your phone number","button_text":"Submit"}
+                                </script>
                                 <div data-react-id="QuestionForm">
                                     <div class="question-form">
                                         <form class="">
